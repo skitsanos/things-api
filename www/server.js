@@ -101,7 +101,7 @@ global.app.use(function (req, res, next)
  */
 global.app.use('/ui', express.static('ui/assets'));
 
-global.log.info(`Starting ${manifest.name}...`);
+global.log.info(`Booting ${manifest.name}...`);
 
 const async = require('async');
 async.parallel({
@@ -119,6 +119,7 @@ async.parallel({
         loader.load(global.app).then(r =>
         {
             global.log.info('Handlers loaded');
+            callback();
         }).catch(err =>
         {
             global.log.error(errr.message);
@@ -132,6 +133,8 @@ async.parallel({
     }
     else
     {
+        global.log.info('Starting web server');
+
         global.app.listen(process.env.PORT || process.env.VMC_APP_PORT || 3000, function ()
         {
             global.log.info(`${manifest.name} (${manifest.description}) is running`);
