@@ -138,32 +138,3 @@ async.parallel({
         });
     }
 });
-
-const esStorage = require(__dirname + '/app/db/filesystem/storage');
-const s = new esStorage({
-    err_output: 'console',
-    url: 'htpp://'
-});
-
-/*
-s.put('hello').then(res =>
-{
-    console.log(res);
-}).catch(err=>{
-    console.log(err);
-});*/
-
-s.search('there').then(results =>
-{
-    for (let result in results)
-    {
-        let res = results[result];
-        console.log(
-            'found "' + res.matches[0] + '" ' + res.count
-            + ' times in "' + result + '"'
-        );
-    }
-}).catch(err =>
-{
-    console.log(err);
-});
