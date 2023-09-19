@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "LoggerDaisy Things API",
   "dependencies": {
-    "arangojs": "^6.9.0",
+    "arangojs": "^8.0.0",
     "async": "^2.6.1",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
