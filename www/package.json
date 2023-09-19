@@ -9,7 +9,7 @@
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-    "csv": "^5.0.0",
+    "csv": "^6.0.0",
     "express": "^4.16.4",
     "express-formidable": "^1.2.0",
     "express-handlebars": "^7.0.0",
