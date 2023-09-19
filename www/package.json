@@ -4,7 +4,7 @@
   "description": "LoggerDaisy Things API",
   "dependencies": {
     "arangojs": "^8.0.0",
-    "async": "^2.6.1",
+    "async": "^3.0.0",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
