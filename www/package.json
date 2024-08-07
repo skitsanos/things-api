@@ -12,7 +12,7 @@
     "csv": "^6.0.0",
     "express": "^4.16.4",
     "express-formidable": "^1.2.0",
-    "express-handlebars": "^7.0.0",
+    "express-handlebars": "^8.0.0",
     "express-session": "^1.15.6",
     "find-in-files": "^0.5.0",
     "handlebars-helpers": "^0.10.0",
